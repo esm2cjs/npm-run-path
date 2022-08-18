@@ -1,6 +1,6 @@
 {
 	"name": "@esm2cjs/npm-run-path",
-	"version": "5.1.0",
+	"version": "5.1.1-cjs.0",
 	"description": "Get your PATH prepended with locally installed binaries. This is a fork of sindresorhus/npm-run-path, but with CommonJS support.",
 	"license": "MIT",
 	"repository": "esm2cjs/npm-run-path",
@@ -41,7 +41,7 @@
 		"executable"
 	],
 	"dependencies": {
-		"path-key": "npm:@esm2cjs/path-key@^4.0.0"
+		"@esm2cjs/path-key": "^4.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.15.0",
@@ -70,7 +70,7 @@
 	"xo": {
 		"ignores": [
 			"cjs",
-			"*.test-d.ts"
+			"**/*.test-d.ts"
 		]
 	}
 }

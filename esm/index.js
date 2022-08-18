@@ -1,7 +1,7 @@
 import process from 'node:process';
 import path from 'node:path';
 import url from 'node:url';
-import pathKey from 'path-key';
+import pathKey from '@esm2cjs/path-key';
 
 export function npmRunPath(options = {}) {
 	const {

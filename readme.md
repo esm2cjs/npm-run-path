@@ -4,7 +4,7 @@ This is a fork of https://github.com/sindresorhus/npm-run-path, but automaticall
 
 ## Install
 
-Use an npm alias to install this package under the original name:
+You can use an npm alias to install this package under the original name:
 
 ```
 npm i npm-run-path@npm:@esm2cjs/npm-run-path
@@ -16,6 +16,22 @@ npm i npm-run-path@npm:@esm2cjs/npm-run-path
     "npm-run-path": "npm:@esm2cjs/npm-run-path"
 }
 ```
+but `npm` might dedupe this incorrectly when other packages depend on the replaced package. If you can, prefer using the scoped package directly:
+
+```
+npm i @esm2cjs/npm-run-path
+```
+
+```jsonc
+// package.json
+"dependencies": {
+    "@esm2cjs/npm-run-path": "^ver.si.on"
+}
+```
+
+> **Note:**
+> We strive to use the same versions as the upstream package, but unfortunately there is a bit of a learning curve with these things.
+> As a result, we had to re-publish `5.1.0` as `5.1.1-cjs.0`.
 
 ## Usage
 

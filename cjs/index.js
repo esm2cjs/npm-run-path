@@ -30,7 +30,7 @@ module.exports = __toCommonJS(esm_exports);
 var import_node_process = __toESM(require("node:process"));
 var import_node_path = __toESM(require("node:path"));
 var import_node_url = __toESM(require("node:url"));
-var import_path_key = __toESM(require("path-key"));
+var import_path_key = __toESM(require("@esm2cjs/path-key"));
 function npmRunPath(options = {}) {
   const {
     cwd = import_node_process.default.cwd(),
