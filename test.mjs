@@ -2,7 +2,7 @@ import process from 'node:process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import test from 'ava';
-import {npmRunPath, npmRunPathEnv} from './index.js';
+import {npmRunPath, npmRunPathEnv} from './esm/index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
